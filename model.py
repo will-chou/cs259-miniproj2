@@ -57,8 +57,8 @@ def main():
         our_model_time = model(m, n, k)
         mean_squared_error += ((time_cudnn - our_model_time)**2)
         print('{:<10s}{:<20s}{:<30s}{:<40s}{:<50s}'.format(str(m),str(n),str(k),str(time_cudnn),str(our_model_time)))
-    print(mean_squared_error)
-    print(len(Lines[1:]))
+    #print(mean_squared_error)
+    #print(len(Lines[1:]))
     mean_squared_error = mean_squared_error / len(Lines[1:])
     print("Total mean squared error: " + str(mean_squared_error))
 
